@@ -1,0 +1,8 @@
+terraform {
+  required_providers {
+    runpod = {
+      source = "decentralized-infrastructure/runpod"
+      version = "1.0.1"
+    }
+  }
+}
