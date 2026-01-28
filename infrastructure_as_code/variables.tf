@@ -1,4 +1,4 @@
-variable "runpod_api_key" = {
+variable "runpod_api_key" {
   type = string
   sensitive = true
 }
