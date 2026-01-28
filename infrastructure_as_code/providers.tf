@@ -6,3 +6,7 @@ terraform {
     }
   }
 }
+
+provider "runpod" {
+  api_token = var.runpod_api_key
+}
