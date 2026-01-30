@@ -4,7 +4,7 @@ I use Linux and to start vulkan dev I used the below command
 [guide here](https://vulkan-tutorial.com/Development_environment)
 
 
-```sudo apt install vulkan-tools spirv-tools libvulkan-dev vulkan-validationlayers vulkan-utility-libraries-dev libshaderc-dev glslang-tools```
+```sudo apt install vulkan-tools libshaderc-dev spirv-tools glslang-tools glslc libvulkan-dev vulkan-validationlayers vulkan-utility-libraries-dev libglfw3-dev libglm-dev```
 
 
 ### Development Tools
