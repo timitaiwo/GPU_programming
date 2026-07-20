@@ -1,5 +1,3 @@
-
-
 ## Install Mojo 
 
 Official Guide Here: https://mojolang.org/install/ 
@@ -10,9 +8,14 @@ Then ran `pixi create mojo-gpu-programming` in the directory that I want to crea
 
 Run `cd mojo-gpu-programming` to change into the newly created directory
 
-Then ran `pixi add mojo`
+Then ran `pixi add mojo` to add mojo
 
-To activate the environment run `pixi shell`
+To activate the pixi environment run `pixi shell`
+
+To build a file `mojo build path/to/file`
+
+To run the file without `mojo path/to/file`
+
 
 ### Setup
 Create the below .vscode/settings.json if you install the Mojo language extension in vscode
