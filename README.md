@@ -1,11 +1,14 @@
 # Introduction
 
-```infrastructure_as_code:``` holds the infrastructure I use to run the GPU programs / experiements
+`infrastructure_as_code:` holds the infrastructure I use to run the GPU programs / experiements
 
-```thunder_kittens:``` holds my forray into CUDA GPU programming with the ThunderKittens library
+`llm_serving:` details my experiences serving open weight models
 
+`mojo-gpu-programming:` holds my exploration of gpu programming using mojo 
 
-```vulkan:``` holds my forray into Vulkan development
+`thunder_kittens:` holds my forray into CUDA GPU programming with the ThunderKittens library
+
+`vulkan:` holds my forray into Vulkan development
 
 
 # GPU Programming Challenges
