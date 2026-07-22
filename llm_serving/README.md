@@ -2,7 +2,9 @@
 
 This directory details my efforts to deploy and optimize serving of open weight models like Deepseek, Kimi, GLM, MiMO, etc.
 
-I am starting out with [runpod](https://www.runpod.io/) for my GPU infrastructure. As of now (21 July,2026) they exclusively support Nvidia so I'll use that.
+I am starting out with [runpod](https://www.runpod.io/) for my GPU infrastructure. As of now (21 July,2026) they exclusively support Nvidia GPUs with no AMD instances so I'll stick to Nvidia.
+
+Also I setup SSH terminal access as this is an experimental setup. Production would require more access controls :).
 
 1. RTX 5090 - 32 GB VRAM - $0.99/hr
 2. H100 SXM - 80GB VRAM - $2.99/hr
