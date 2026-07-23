@@ -11,7 +11,7 @@ Also I setup SSH terminal access as this is an experimental setup. Production wo
 3. RTX PRO 6000 - 96GB VRAM - $1.99
 4. H200 SXM - 141GB VRAM - $4.39/hr
 
-An alternative provider is [verda](https://verda.com/) with their terraform intro docs [here](https://docs.verda.com/infrastructure-as-code/terraform/) and a guide to serve Deepseek R1 [here](https://verda.com/blog/deploy-deepseek-r1-with-sglang-and-terraform). As at now they have competitve pricing so I'll keep them in mind.
+An alternative provider is [verda](https://verda.com/) with their terraform intro docs [here](https://docs.verda.com/infrastructure-as-code/terraform/). As at now they have competitve pricing so I'll keep them in mind.
 
 
 ## Test Run
@@ -23,4 +23,6 @@ An alternative provider is [verda](https://verda.com/) with their terraform intr
 # Model Serving 
 
 [SGLang](https://docs.sglang.io/) hosted https://github.com/sgl-project/sglang is a prime serving framwork to investigate
+
+Use the verda guide [here](https://verda.com/blog/deploy-deepseek-r1-with-sglang-and-terraform) as an inference guide
 
