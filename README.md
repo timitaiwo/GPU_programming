@@ -1,5 +1,9 @@
 # Introduction
 
+`git clone --recurse-submodule https://github.com/timitaiwo/GPU_programming.git`
+
+## Directories
+
 `infrastructure_as_code:` holds the infrastructure I use to run the GPU programs / experiements
 
 `llm_serving:` details my experiences serving open weight models
