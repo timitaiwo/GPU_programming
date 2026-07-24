@@ -1,0 +1,4 @@
+[submodule "AMD_GPU_HIP_programming/ROCdbgapi"]
+	path = AMD_GPU_HIP_programming/ROCdbgapi
+	url = git@github.com:ROCm/ROCdbgapi.git
+	branch = release/rocm-rel-7.1
