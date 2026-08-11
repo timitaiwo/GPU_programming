@@ -1,0 +1,3 @@
+.vscode
+.direnv
+AMD_GPU_HIP_programming/build/*
