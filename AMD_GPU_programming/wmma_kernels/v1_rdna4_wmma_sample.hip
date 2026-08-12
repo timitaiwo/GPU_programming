@@ -9,6 +9,8 @@
 #include <thrust/host_vector.h>
 #include <thrust/device_vector.h>
 
+#include "thrust_wrapper.hpp"
+
 
 constexpr int MMA_M = 16, MMA_N = 16, MMA_K = 16;
 constexpr int M0_M = 2, M0_N = 3, M0_K = 2;
