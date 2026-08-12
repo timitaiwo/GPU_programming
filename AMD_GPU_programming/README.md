@@ -1,0 +1,1 @@
+Run `source setup.sh` in terminal to setup the dev env
