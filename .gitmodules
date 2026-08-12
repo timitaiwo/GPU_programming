@@ -6,6 +6,11 @@
 	path = AMD_GPU_programming/third-party/llvm-project
 	url = git@github.com:timitaiwo/llvm-project.git
 	branch = feature/amd-rdna-2
-[submodule "AMD_GPU_programming/third-party/rocm-systems"]
-	path = AMD_GPU_programming/third-party/rocm-systems
+[submodule "rocm-systems"]
+	path = rocm-systems
 	url = git@github.com:ROCm/rocm-systems.git
+	branch = release/therock-7.14
+[submodule "rocm-libraries"]
+	path = rocm-libraries
+	url = git@github.com:ROCm/rocm-libraries.git
+	branch = release/therock-7.14
