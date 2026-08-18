@@ -1,11 +1,3 @@
-[submodule "AMD_GPU_HIP_programming/ROCdbgapi"]
-	path = AMD_GPU_programming/third-party/ROCdbgapi
-	url = git@github.com:ROCm/ROCdbgapi.git
-	branch = release/rocm-rel-7.1
-[submodule "AMD_GPU_HIP_programming/third-party/llvm-project"]
-	path = AMD_GPU_programming/third-party/llvm-project
-	url = git@github.com:timitaiwo/llvm-project.git
-	branch = feature/amd-rdna-2
 [submodule "rocm-systems"]
 	path = rocm-systems
 	url = git@github.com:ROCm/rocm-systems.git
