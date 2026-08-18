@@ -6,3 +6,7 @@
 	path = AMD_GPU_programming/third-party/rocm-libraries
 	url = git@github.com:ROCm/rocm-libraries.git
 	branch = release/therock-7.14
+[submodule "AMD_GPU_programming/third-party/ROCgdb"]
+	path = AMD_GPU_programming/third-party/ROCgdb
+	url = git@github.com:ROCm/ROCgdb.git
+	branch = release/therock-7.14
