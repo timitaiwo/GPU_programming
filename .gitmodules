@@ -1,8 +1,8 @@
 [submodule "rocm-systems"]
-	path = rocm-systems
+	path = AMD_GPU_programming/third-party/rocm-systems
 	url = git@github.com:ROCm/rocm-systems.git
 	branch = release/therock-7.14
 [submodule "rocm-libraries"]
-	path = rocm-libraries
+	path = AMD_GPU_programming/third-party/rocm-libraries
 	url = git@github.com:ROCm/rocm-libraries.git
 	branch = release/therock-7.14
