@@ -5,11 +5,11 @@
 
 #include <hip/hip_runtime.h>
 
-template <typename T> __global__ void square(T *A, int64_t max) {
+template <typename T> __global__ void square(T *A, const int64_t max) {
 
   int start = blockIdx.x * blockDim.x + threadIdx.x;
 
-  for (int i = 0; i < max; i++) {
+  for (int i = start; i < max && i < ; i++) {
     A[i] = A[i] * A[i];
   }
 }
@@ -24,6 +24,8 @@ int main() {
   // Generate the vector
   const int MAX = 200;
   auto baseVec = std::vector<int32_t>(MAX);
+  auto resVec = std::vector<int32_t>(MAX);
+
   for (auto &val : baseVec) {
     val = distribution(generator);
   }
@@ -47,8 +49,7 @@ int main() {
   }
 
   // Launch kernel
-  square
-
+  square<<<1, 1>>>(a_dev, baseVec.size());
 
   // Synchronize i.e. wait for kernel to finish
   hipState = hipDeviceSynchronize();
@@ -59,7 +60,6 @@ int main() {
   }
 
   // Extract the squared vector from the GPU
-  auto resVec = std::vector<int32_t>(MAX);
   hipState = hipMemcpy(resVec.data(), a_dev, numBytes, hipMemcpyDeviceToHost);
   if (hipState != hipSuccess) {
     std::cerr << "Result from GPU not extracted with error: "
@@ -68,11 +68,17 @@ int main() {
   }
 
   // Compare resVec and baseVec values
+  bool expected = true;
   for (int i = 0; i < baseVec.size(); i++) {
     if (baseVec[i] * baseVec[i] != resVec[i]) {
       std::cerr << i << " with base value " << baseVec[i]
                 << " is not half of res value " << resVec[i] << std::endl;
+      expected = false;
     }
+  }
+
+  if (expected == true) {
+    std::cout << "Kernel executed successfully" << std::endl;
   }
 
   hipState = hipFree(
